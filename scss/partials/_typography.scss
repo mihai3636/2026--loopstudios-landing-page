@@ -1,0 +1,51 @@
+@use "utils" as *;
+@use "variables" as *;
+
+.tp-1 {
+  font-size: var(--fs-1);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-light);
+}
+
+.tp-2 {
+  font-size: var(--fs-2);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-light);
+}
+
+.tp-3 {
+  font-size: var(--fs-3);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-light);
+}
+
+.tp-4 {
+  font-size: var(--fs-4);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-light);
+}
+
+.tp-5 {
+  font-size: var(--fs-5);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-light);
+}
+
+.tp-6 {
+  font-size: var(--fs-6);
+  line-height: var(--lh-2);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-regular);
+}
+
+.tp-7 {
+  font-size: var(--fs-7);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-1);
+  font-weight: var(--fw-regular);
+}

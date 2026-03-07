@@ -1,53 +1,53 @@
 @use "./utils" as *;
 
 :root {
-  --clr-primary: hsl(5, 85%, 63%);
-  --clr-accent: hsl(35, 77%, 62%);
+  --clr-primary: hsl(0, 0%, 0%);
+  --clr-accent: var(--clr-white);
+
+  --clr-neutral: hsl(0, 0%, 85%);
 
   --clr-primary-shade: #1b4133;
 
   --clr-white: #fff;
-  --clr-grey-1: hsl(36, 100%, 99%);
-  --clr-grey-2: hsl(233, 8%, 79%);
-  --clr-grey-3: hsl(236, 13%, 42%);
-  --clr-grey-4: hsl(240, 100%, 5%);
+  --clr-grey-1: #f6faff;
+  --clr-grey-2: #e5eaf1;
 
-  --ff-main: "Inter";
+  --clr-gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
 
-  --fw-thin: 400;
-  --fw-normal: 700;
-  --fw-bold: 800;
+  --ff-main: "Alata";
+  --ff-secondary: "Josefin Sans";
+
+  --fw-light: 300;
+  --ff-regular: 400;
 
   // FONT SIZE
-  --fs-1: #{toRem(10px)};
-  --fs-2: #{toRem(12px)};
-  --fs-3: #{toRem(14px)};
-  --fs-4: #{toRem(16px)};
-  --fs-5: #{toRem(18px)};
-  --fs-6: #{toRem(20px)};
-  --fs-7: #{toRem(24px)};
-  --fs-8: #{toRem(30px)};
-  --fs-9: #{toRem(36px)};
-  --fs-10: #{toRem(44px)};
-  --fs-11: #{toRem(52px)};
-  --fs-12: #{toRem(62px)};
-  --fs-13: #{toRem(74px)};
-  --fs-14: #{toRem(86px)};
-  --fs-15: #{toRem(98px)};
+  --fs-1: #{toRem(72px)};
+  --fs-2: #{toRem(48px)};
+  --fs-3: #{toRem(40px)};
+  --fs-4: #{toRem(32px)};
+  --fs-5: #{toRem(24px)};
+  --fs-6: #{toRem(25px)};
+  --fs-7: #{toRem(15px)};
 
   // SPACING
-  --sp-1: #{toRem(2px)};
-  --sp-2: #{toRem(4px)};
-  --sp-3: #{toRem(8px)};
-  --sp-4: #{toRem(12px)};
-  --sp-5: #{toRem(16px)};
-  --sp-6: #{toRem(24px)};
-  --sp-7: #{toRem(32px)};
-  --sp-8: #{toRem(48px)};
-  --sp-9: #{toRem(64px)};
-  --sp-10: #{toRem(80px)};
-  --sp-11: #{toRem(96px)};
-  --sp-12: #{toRem(128px)};
+
+  --sp-0: 0;
+  --sp-1: #{toRem(8px)};
+  --sp-2: #{toRem(16px)};
+  --sp-3: #{toRem(24px)};
+  --sp-4: #{toRem(32px)};
+  --sp-5: #{toRem(40px)};
+  --sp-6: #{toRem(48px)};
+  --sp-7: #{toRem(64px)};
+  --sp-8: #{toRem(80px)};
+
+  // LETTER SPACING
+  --ls-0: 0;
+  --ls-1: 5px;
+
+  // LINE HEIGHT
+  --lh-1: 1;
+  --lh-2: 1.65;
 
   --desktop-container-width: #{toRem(600px)};
 }

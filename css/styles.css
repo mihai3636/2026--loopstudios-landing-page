@@ -1,43 +1,36 @@
 :root {
-  --clr-primary: hsl(5, 85%, 63%);
-  --clr-accent: hsl(35, 77%, 62%);
+  --clr-primary: hsl(0, 0%, 0%);
+  --clr-accent: var(--clr-white);
+  --clr-neutral: hsl(0, 0%, 85%);
   --clr-primary-shade: #1b4133;
   --clr-white: #fff;
-  --clr-grey-1: hsl(36, 100%, 99%);
-  --clr-grey-2: hsl(233, 8%, 79%);
-  --clr-grey-3: hsl(236, 13%, 42%);
-  --clr-grey-4: hsl(240, 100%, 5%);
-  --ff-main: "Inter";
-  --fw-thin: 400;
-  --fw-normal: 700;
-  --fw-bold: 800;
-  --fs-1: 0.625rem;
-  --fs-2: 0.75rem;
-  --fs-3: 0.875rem;
-  --fs-4: 1rem;
-  --fs-5: 1.125rem;
-  --fs-6: 1.25rem;
-  --fs-7: 1.5rem;
-  --fs-8: 1.875rem;
-  --fs-9: 2.25rem;
-  --fs-10: 2.75rem;
-  --fs-11: 3.25rem;
-  --fs-12: 3.875rem;
-  --fs-13: 4.625rem;
-  --fs-14: 5.375rem;
-  --fs-15: 6.125rem;
-  --sp-1: 0.125rem;
-  --sp-2: 0.25rem;
-  --sp-3: 0.5rem;
-  --sp-4: 0.75rem;
-  --sp-5: 1rem;
-  --sp-6: 1.5rem;
-  --sp-7: 2rem;
-  --sp-8: 3rem;
-  --sp-9: 4rem;
-  --sp-10: 5rem;
-  --sp-11: 6rem;
-  --sp-12: 8rem;
+  --clr-grey-1: #f6faff;
+  --clr-grey-2: #e5eaf1;
+  --clr-gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  --ff-main: "Alata";
+  --ff-secondary: "Josefin Sans";
+  --fw-light: 300;
+  --ff-regular: 400;
+  --fs-1: 4.5rem;
+  --fs-2: 3rem;
+  --fs-3: 2.5rem;
+  --fs-4: 2rem;
+  --fs-5: 1.5rem;
+  --fs-6: 1.5625rem;
+  --fs-7: 0.9375rem;
+  --sp-0: 0;
+  --sp-1: 0.5rem;
+  --sp-2: 1rem;
+  --sp-3: 1.5rem;
+  --sp-4: 2rem;
+  --sp-5: 2.5rem;
+  --sp-6: 3rem;
+  --sp-7: 4rem;
+  --sp-8: 5rem;
+  --ls-0: 0;
+  --ls-1: 5px;
+  --lh-1: 1;
+  --lh-2: 1.65;
   --desktop-container-width: 37.5rem;
 }
 
@@ -68,9 +61,6 @@ img {
 
 body {
   font-family: var(--ff-main), sans-serif;
-  font-size: var(--fs-4);
-  font-weight: var(--fw-normal);
-  line-height: 1.5;
 }
 
 .flow-content > * + * {
@@ -88,6 +78,55 @@ body {
 .container {
   max-width: var(--desktop-container-width);
   margin-inline: auto;
+}
+
+.tp-1 {
+  font-size: var(--fs-1);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-light);
+}
+
+.tp-2 {
+  font-size: var(--fs-2);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-light);
+}
+
+.tp-3 {
+  font-size: var(--fs-3);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-light);
+}
+
+.tp-4 {
+  font-size: var(--fs-4);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-light);
+}
+
+.tp-5 {
+  font-size: var(--fs-5);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-light);
+}
+
+.tp-6 {
+  font-size: var(--fs-6);
+  line-height: var(--lh-2);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-regular);
+}
+
+.tp-7 {
+  font-size: var(--fs-7);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-1);
+  font-weight: var(--fw-regular);
 }
 
 /*# sourceMappingURL=styles.css.map */

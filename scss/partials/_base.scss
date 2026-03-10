@@ -5,6 +5,10 @@ body {
   font-family: var(--ff-main), sans-serif;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .flow-content > * + * {
   margin-top: var(--flow-spacer, var(--sp-3));
 }
@@ -20,4 +24,22 @@ body {
 .container {
   max-width: var(--desktop-container-width);
   margin-inline: auto;
+}
+
+.section {
+  padding-inline: var(--sp-3);
+
+  @media (min-width: $bp-tablet) {
+    padding-inline: var(--sp-8);
+  }
+}
+
+.section--header {
+  padding-block-start: var(--sp-5);
+  padding-block-end: var(--sp-5);
+
+  @media (min-width: $bp-tablet) {
+    padding-block-start: var(--sp-7);
+    padding-block-end: var(--sp-7);
+  }
 }

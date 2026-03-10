@@ -1,0 +1,24 @@
+@use "utils" as *;
+@use "variables" as *;
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.nav {
+  .icon--close {
+    display: none;
+  }
+
+  &[data-open="true"] {
+    .icon--close {
+      display: block;
+    }
+
+    .icon--hamburger {
+      display: none;
+    }
+  }
+}

@@ -10,7 +10,7 @@
   --ff-main: "Josefin Sans";
   --ff-secondary: "Alata";
   --fw-light: 300;
-  --ff-regular: 400;
+  --fw-regular: 400;
   --fs-1: 4.5rem;
   --fs-2: 3rem;
   --fs-3: 2.5rem;
@@ -31,7 +31,7 @@
   --ls-1: 5px;
   --lh-1: 1;
   --lh-2: 1.65;
-  --desktop-container-width: 37.5rem;
+  --desktop-container-width: 69.375rem;
 }
 
 *,
@@ -59,8 +59,16 @@ img {
   display: block;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   font-family: var(--ff-main), sans-serif;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .flow-content > * + * {
@@ -78,6 +86,26 @@ body {
 .container {
   max-width: var(--desktop-container-width);
   margin-inline: auto;
+}
+
+.section {
+  padding-inline: var(--sp-3);
+}
+@media (min-width: 45rem) {
+  .section {
+    padding-inline: var(--sp-8);
+  }
+}
+
+.section--header {
+  padding-block-start: var(--sp-5);
+  padding-block-end: var(--sp-5);
+}
+@media (min-width: 45rem) {
+  .section--header {
+    padding-block-start: var(--sp-7);
+    padding-block-end: var(--sp-7);
+  }
 }
 
 .tp-1 {
@@ -100,6 +128,14 @@ body {
   letter-spacing: var(--ls-0);
   font-weight: var(--fw-light);
 }
+@media (min-width: 45rem) {
+  .tp-3 {
+    font-size: var(--fs-1);
+    line-height: var(--lh-1);
+    letter-spacing: var(--ls-0);
+    font-weight: var(--fw-light);
+  }
+}
 
 .tp-4 {
   font-size: var(--fs-4);
@@ -114,6 +150,14 @@ body {
   letter-spacing: var(--ls-0);
   font-weight: var(--fw-light);
 }
+@media (min-width: 45rem) {
+  .tp-5 {
+    font-size: var(--fs-6);
+    line-height: var(--lh-2);
+    letter-spacing: var(--ls-0);
+    font-weight: var(--fw-regular);
+  }
+}
 
 .tp-6 {
   font-size: var(--fs-6);
@@ -127,6 +171,133 @@ body {
   line-height: var(--lh-1);
   letter-spacing: var(--ls-1);
   font-weight: var(--fw-regular);
+}
+
+.section--header {
+  background-image: url(../../images/mobile/image-hero.jpg);
+  background-size: cover;
+}
+@media (min-width: 45rem) {
+  .section--header {
+    background-image: url(../../images/desktop/image-hero.jpg);
+    background-position: center;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 163px;
+}
+@media (min-width: 45rem) {
+  .nav {
+    margin-block-end: 130px;
+  }
+}
+
+.nav__logo {
+  width: 144px;
+  height: 24px;
+  z-index: 200;
+}
+@media (min-width: 45rem) {
+  .nav__logo {
+    width: 192px;
+    height: 32px;
+  }
+}
+
+.nav__links {
+  position: fixed;
+  padding-inline: var(--sp-3);
+  padding-block-start: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  inset: 0;
+  transform: translateX(100%);
+  background-color: var(--clr-primary);
+  z-index: 100;
+  transition: transform 0.3s ease-in;
+}
+@media (min-width: 45rem) {
+  .nav__links {
+    position: static;
+    transform: translateX(0%);
+    background-color: transparent;
+    padding: 0;
+    flex-direction: row;
+  }
+}
+
+.nav[data-open=true] .nav__links {
+  transform: translateX(0%);
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-white);
+}
+@media (min-width: 45rem) {
+  .link {
+    text-transform: capitalize;
+    position: relative;
+  }
+  .link:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: var(--clr-white);
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+  }
+}
+
+.nav__btn {
+  display: block;
+  z-index: 200;
+}
+@media (min-width: 45rem) {
+  .nav__btn {
+    display: none;
+  }
+}
+
+.banner {
+  color: var(--clr-white);
+  border: 1px solid var(--clr-white);
+  max-width: 650px;
+  padding-block: var(--sp-2);
+  padding-inline: var(--sp-3);
+  margin-block-end: 227px;
+}
+@media (min-width: 45rem) {
+  .banner {
+    padding: var(--sp-5);
+    padding-block-end: var(--sp-3);
+    margin-block-end: 146px;
+  }
+}
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.nav .icon--close {
+  display: none;
+}
+.nav[data-open=true] .icon--close {
+  display: block;
+}
+.nav[data-open=true] .icon--hamburger {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

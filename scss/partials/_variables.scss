@@ -1,5 +1,7 @@
 @use "./utils" as *;
 
+$bp-tablet: #{toRem(720px)};
+
 :root {
   --clr-primary: hsl(0, 0%, 0%);
   --clr-accent: var(--clr-white);
@@ -18,7 +20,7 @@
   --ff-secondary: "Alata";
 
   --fw-light: 300;
-  --ff-regular: 400;
+  --fw-regular: 400;
 
   // FONT SIZE
   --fs-1: #{toRem(72px)};
@@ -48,6 +50,5 @@
   // LINE HEIGHT
   --lh-1: 1;
   --lh-2: 1.65;
-
-  --desktop-container-width: #{toRem(600px)};
+  --desktop-container-width: #{toRem(1110px)};
 }

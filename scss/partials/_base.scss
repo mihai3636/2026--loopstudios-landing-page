@@ -27,6 +27,10 @@ body {
 }
 
 .section {
+  --flow-spacer: 96px;
+  @media (min-width: $bp-desktop) {
+    --flow-spacer: 160px;
+  }
   padding-inline: var(--sp-3);
 
   @media (min-width: $bp-tablet) {
@@ -42,4 +46,8 @@ body {
     padding-block-start: var(--sp-7);
     padding-block-end: var(--sp-7);
   }
+}
+
+.section--footer {
+  background-color: var(--clr-primary);
 }

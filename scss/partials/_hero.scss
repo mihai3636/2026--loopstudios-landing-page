@@ -1,0 +1,45 @@
+@use "utils" as *;
+@use "variables" as *;
+
+.hero {
+  display: grid;
+  justify-items: center;
+  row-gap: var(--sp-6);
+
+  @media (min-width: $bp-desktop) {
+    position: relative;
+
+    grid-template-columns: 65fr 35fr;
+  }
+}
+
+.hero__info {
+  --flow-spacer: var(--sp-2);
+  text-align: center;
+
+  @media (min-width: $bp-tablet) {
+    --flow-spacer: var(--sp-3);
+  }
+
+  @media (min-width: $bp-desktop) {
+    text-align: left;
+
+    position: absolute;
+    background-color: var(--clr-white);
+    width: 50%;
+
+    padding-inline-start: 96px;
+    padding-block-start: 96px;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.hero__desc {
+  font-family: var(--ff-secondary);
+  opacity: 0.5;
+}

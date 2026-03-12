@@ -1,6 +1,7 @@
 @use "./utils" as *;
 
 $bp-tablet: #{toRem(720px)};
+$bp-desktop: #{toRem(1200px)};
 
 :root {
   --clr-primary: hsl(0, 0%, 0%);
@@ -28,8 +29,8 @@ $bp-tablet: #{toRem(720px)};
   --fs-3: #{toRem(40px)};
   --fs-4: #{toRem(32px)};
   --fs-5: #{toRem(24px)};
-  --fs-6: #{toRem(25px)};
-  --fs-7: #{toRem(15px)};
+  --fs-6: #{toRem(15px)};
+  --fs-7: #{toRem(14px)};
 
   // SPACING
 

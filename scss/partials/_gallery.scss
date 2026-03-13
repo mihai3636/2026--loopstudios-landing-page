@@ -8,13 +8,14 @@
 
 .gallery__btn {
   display: none;
+  justify-self: center;
 
   @media (min-width: $bp-desktop) {
     display: block;
   }
 
   &--mobile {
-    display: block;
+    display: inline-block;
     margin-block-start: 8px;
 
     @media (min-width: $bp-desktop) {
@@ -25,7 +26,6 @@
 
 .gallery__grid {
   display: grid;
-  justify-items: stretch;
   row-gap: var(--sp-3);
 }
 

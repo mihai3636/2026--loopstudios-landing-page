@@ -340,7 +340,7 @@ body {
 
 .btn--link {
   text-decoration: none;
-  display: block;
+  display: inline-block;
 }
 
 .nav .icon--close {
@@ -403,6 +403,7 @@ body {
 
 .gallery__btn {
   display: none;
+  justify-self: center;
 }
 @media (min-width: 75rem) {
   .gallery__btn {
@@ -410,7 +411,7 @@ body {
   }
 }
 .gallery__btn--mobile {
-  display: block;
+  display: inline-block;
   margin-block-start: 8px;
 }
 @media (min-width: 75rem) {
@@ -421,7 +422,6 @@ body {
 
 .gallery__grid {
   display: grid;
-  justify-items: stretch;
   row-gap: var(--sp-3);
 }
 

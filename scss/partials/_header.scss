@@ -15,7 +15,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
+.nav--header {
   margin-block-end: 163px;
 
   @media (min-width: $bp-tablet) {
@@ -23,7 +25,7 @@
   }
 }
 
-.nav__logo {
+.logo {
   width: 144px;
   height: 24px;
 
@@ -69,6 +71,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var(--clr-white);
+  font-family: var(--ff-secondary);
 
   @media (min-width: $bp-tablet) {
     text-transform: capitalize;

@@ -428,6 +428,12 @@ body {
 .gallery__img-box {
   position: relative;
 }
+.gallery__img-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--clr-gradient);
+}
 
 .gallery__img {
   width: 100%;
@@ -439,6 +445,7 @@ body {
 .gallery__img-title {
   --spacer-img-left: 20px;
   --spacer-img-bottom: 20px;
+  z-index: 100;
   position: absolute;
   left: var(--spacer-img-left);
   bottom: var(--spacer-img-bottom);

@@ -31,6 +31,13 @@
 
 .gallery__img-box {
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--clr-gradient);
+  }
 }
 
 .gallery__img {
@@ -44,6 +51,7 @@
 .gallery__img-title {
   --spacer-img-left: 20px;
   --spacer-img-bottom: 20px;
+  z-index: 100;
 
   position: absolute;
   left: var(--spacer-img-left);

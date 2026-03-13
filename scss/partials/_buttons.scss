@@ -2,9 +2,33 @@
 @use "variables" as *;
 
 .btn {
-  border: none;
   background: none;
   cursor: pointer;
+}
+
+.btn--icon {
+  border: none;
+}
+
+.btn--outline {
+  text-transform: uppercase;
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-primary);
+
+  padding-block: var(--sp-2);
+  padding-inline: var(--sp-5);
+
+  transition: background-color 0.1s ease-out;
+
+  &:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+  }
+}
+
+.btn--link {
+  text-decoration: none;
+  display: block;
 }
 
 .nav {

@@ -1,0 +1,30 @@
+@use "utils" as *;
+@use "variables" as *;
+
+.gallery {
+  --flow-spacer: var(--sp-6);
+  text-align: center;
+}
+
+.gallery__btn {
+  display: none;
+
+  @media (min-width: $bp-desktop) {
+    display: block;
+  }
+
+  &--mobile {
+    display: block;
+    margin-block-start: 8px;
+
+    @media (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}
+
+.gallery__grid {
+  display: grid;
+  justify-items: center;
+  row-gap: var(--sp-3);
+}

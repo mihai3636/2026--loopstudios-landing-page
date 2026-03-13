@@ -303,9 +303,30 @@ body {
 }
 
 .btn {
-  border: none;
   background: none;
   cursor: pointer;
+}
+
+.btn--icon {
+  border: none;
+}
+
+.btn--outline {
+  text-transform: uppercase;
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-primary);
+  padding-block: var(--sp-2);
+  padding-inline: var(--sp-5);
+  transition: background-color 0.1s ease-out;
+}
+.btn--outline:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+}
+
+.btn--link {
+  text-decoration: none;
+  display: block;
 }
 
 .nav .icon--close {
@@ -359,6 +380,35 @@ body {
 .hero__desc {
   font-family: var(--ff-secondary);
   opacity: 0.5;
+}
+
+.gallery {
+  --flow-spacer: var(--sp-6);
+  text-align: center;
+}
+
+.gallery__btn {
+  display: none;
+}
+@media (min-width: 75rem) {
+  .gallery__btn {
+    display: block;
+  }
+}
+.gallery__btn--mobile {
+  display: block;
+  margin-block-start: 8px;
+}
+@media (min-width: 75rem) {
+  .gallery__btn--mobile {
+    display: none;
+  }
+}
+
+.gallery__grid {
+  display: grid;
+  justify-items: center;
+  row-gap: var(--sp-3);
 }
 
 /*# sourceMappingURL=styles.css.map */

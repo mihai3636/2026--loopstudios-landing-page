@@ -55,6 +55,19 @@
     letter-spacing: var(--ls-0);
     font-weight: var(--fw-regular);
   }
+
+  &--larger-desktop {
+    font-size: var(--fs-5);
+    line-height: var(--lh-1);
+    letter-spacing: var(--ls-0);
+    font-weight: var(--fw-light);
+    @media (min-width: $bp-desktop) {
+      font-size: var(--fs-4);
+      line-height: var(--lh-1);
+      letter-spacing: var(--ls-0);
+      font-weight: var(--fw-light);
+    }
+  }
 }
 
 .tp-6 {

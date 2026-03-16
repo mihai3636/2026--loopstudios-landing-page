@@ -27,9 +27,9 @@ body {
 }
 
 .section {
-  --flow-spacer: 96px;
+  --flow-spacer: var(--sp-between-sections);
   @media (min-width: $bp-desktop) {
-    --flow-spacer: 160px;
+    --flow-spacer: var(--sp-between-section-desktop);
   }
   padding-inline: var(--sp-3);
 

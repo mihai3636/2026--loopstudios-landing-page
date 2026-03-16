@@ -28,8 +28,8 @@
     background-color: var(--clr-white);
     width: 50%;
 
-    padding-inline-start: 96px;
-    padding-block-start: 96px;
+    padding-inline-start: #{toRem(96px)};
+    padding-block-start: #{toRem(96px)};
     bottom: 0;
     right: 0;
   }

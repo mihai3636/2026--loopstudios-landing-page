@@ -85,8 +85,8 @@
 }
 
 .gallery__img-title {
-  --spacer-img-left: 20px;
-  --spacer-img-bottom: 20px;
+  --spacer-img-left: #{toRem(20px)};
+  --spacer-img-bottom: #{toRem(20px)};
   z-index: 100;
 
   position: absolute;
@@ -98,12 +98,12 @@
   text-align: left;
 
   @media (min-width: $bp-tablet) {
-    --spacer-img-left: 38px;
-    --spacer-img-bottom: 20px;
+    --spacer-img-left: #{toRem(38px)};
+    --spacer-img-bottom: #{toRem(20px)};
   }
 
   @media (min-width: $bp-desktop) {
-    --spacer-img-left: 40px;
-    --spacer-img-bottom: 32px;
+    --spacer-img-left: #{toRem(40px)};
+    --spacer-img-bottom: #{toRem(32px)};
   }
 }

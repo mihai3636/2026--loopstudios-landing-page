@@ -44,6 +44,9 @@ $bp-desktop: #{toRem(1200px)};
   --sp-7: #{toRem(64px)};
   --sp-8: #{toRem(80px)};
 
+  --sp-between-sections: #{toRem(96px)};
+  --sp-between-section-desktop: #{toRem(160px)};
+
   // LETTER SPACING
   --ls-0: 0;
   --ls-1: 5px;
@@ -52,4 +55,7 @@ $bp-desktop: #{toRem(1200px)};
   --lh-1: 1;
   --lh-2: 1.65;
   --desktop-container-width: #{toRem(1110px)};
+
+  --z-index-menu-mobile: 100;
+  --z-index-nav-btns: 200;
 }

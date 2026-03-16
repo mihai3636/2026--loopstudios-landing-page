@@ -18,29 +18,29 @@
 }
 
 .nav--header {
-  margin-block-end: 163px;
+  margin-block-end: #{toRem(163px)};
 
   @media (min-width: $bp-tablet) {
-    margin-block-end: 130px;
+    margin-block-end: #{toRem(130px)};
   }
 }
 
 .logo {
-  width: 144px;
-  height: 24px;
+  width: #{toRem(144px)};
+  height: #{toRem(24px)};
 
-  z-index: 200;
+  z-index: var(--z-index-nav-btns);
 
   @media (min-width: $bp-tablet) {
-    width: 192px;
-    height: 32px;
+    width: #{toRem(192px)};
+    height: #{toRem(32px)};
   }
 }
 
 .nav__links {
   position: fixed;
   padding-inline: var(--sp-3);
-  padding-block-start: 200px;
+  padding-block-start: #{toRem(200px)};
 
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@
   inset: 0;
   transform: translateX(100%);
   background-color: var(--clr-primary);
-  z-index: 100;
+  z-index: var(--z-index-menu-mobile);
 
   transition: transform 0.3s ease-in;
 
@@ -94,7 +94,7 @@
 
 .nav__btn {
   display: block;
-  z-index: 200;
+  z-index: var(--z-index-nav-btns);
 
   @media (min-width: $bp-tablet) {
     display: none;
@@ -104,17 +104,17 @@
 .banner {
   color: var(--clr-white);
   border: 1px solid var(--clr-white);
-  max-width: 650px;
+  max-width: #{toRem(650px)};
 
   padding-block: var(--sp-2);
   padding-inline: var(--sp-3);
 
-  margin-block-end: 227px;
+  margin-block-end: #{toRem(227px)};
 
   @media (min-width: $bp-tablet) {
     padding: var(--sp-5);
     padding-block-end: var(--sp-3);
 
-    margin-block-end: 146px;
+    margin-block-end: #{toRem(146px)};
   }
 }
